@@ -1,8 +1,8 @@
-# Retail Demand Forecasting & Governance
+# Explainable Category-Store Demand Forecasting and Forecast Governance
 
-An end-to-end retail forecasting system built for a real planning question: **which model should a supply-chain manager trust for the next 28 days, where is it likely to fail, and how should that evidence be governed?**
+My MSc Business Analytics dissertation at Queen's University Belfast developed and tested a 28-day demand forecasting framework for category-store planning. The study uses 58,230 daily observations across 30 category-store series and compares a global recursive LightGBM model with seasonal-naive and Holt-Winters benchmarks through four ordered backtests.
 
-This was my MSc Business Analytics dissertation at Queen's University Belfast. I developed the research design, Python forecasting pipeline, evaluation framework, validation controls and five-page Power BI implementation.
+I designed the research, engineered the forecasting pipeline, implemented recursive multi-step prediction, built the temporal evaluation and leakage controls, and translated the results into a five-page Power BI decision product. For GitHub, I rebuilt the submitted page layout as static images; the metrics are retained from the archived dissertation run.
 
 ![Forecast performance dashboard](dashboard/mockups/page_3.png)
 
@@ -18,11 +18,11 @@ This was my MSc Business Analytics dissertation at Queen's University Belfast. I
 | Series wins vs Holt-Winters | **19 / 30** |
 | Leakage masking checks | **4 / 4 passed** |
 
-LightGBM outperformed both baselines overall and in every evaluation fold. I retained the counter-evidence as well: Holt-Winters was better for 11 series and slightly stronger over forecast days 22–28. The deployment decision is therefore a governed model choice, not a claim that one model dominates everywhere.
+LightGBM produced the strongest overall result and won every evaluation fold. The analysis also retained the counter-evidence: Holt-Winters was better for 11 series and slightly stronger over forecast days 22–28. The recommendation was therefore to use LightGBM as the primary forecast while keeping series-level exceptions visible for review.
 
-## Why this project matters
+## Research contribution
 
-Forecast accuracy alone is not enough for an operational decision. The solution connects five pieces that are often separated:
+The dissertation joins five parts of the forecasting problem that are often assessed separately:
 
 1. a defined 28-day category-store planning decision;
 2. time-ordered backtesting against credible baselines;
@@ -30,7 +30,7 @@ Forecast accuracy alone is not enough for an operational decision. The solution 
 4. explicit selection, leakage and robustness controls;
 5. a Power BI handoff designed for exception review rather than automated ordering.
 
-The result is a portfolio-grade example of translating machine learning into a decision process that a planning stakeholder can inspect.
+Together, these components make the model choice traceable from raw history through evaluation, selection and management review.
 
 ## Analytical design
 
@@ -63,9 +63,9 @@ Four ordered 28-day backtests
 - A model-complexity gate specified before comparing final results.
 - Performance broken down by fold, series and seven-day horizon band.
 
-## Dashboard product
+## Power BI decision product
 
-The Power BI design provides:
+The submitted Power BI implementation provides:
 
 - an executive view of forward demand and model reliability;
 - a category-store exception queue for human review;
@@ -77,7 +77,7 @@ The Power BI design provides:
 |---|---|---|
 | ![Executive overview](dashboard/mockups/page_1.png) | ![Demand exceptions](dashboard/mockups/page_2.png) | ![Governance](dashboard/mockups/page_4.png) |
 
-The submitted `.pbix` is intentionally not public because it embeds restricted data. Screenshots and the documented star schema show the implemented product without redistributing source records.
+The submitted `.pbix` is intentionally not public because it embeds restricted data. The static images reproduce the implemented page structure, and the documented star schema records how the Power BI model was organised without redistributing source records.
 
 ## Repository guide
 
@@ -111,10 +111,11 @@ The public code uses the neutral seed `42`; the saved metrics are the evidence t
 
 Python · pandas · NumPy · statsmodels · LightGBM · scikit-learn · Jupyter · Power BI · temporal cross-validation · feature engineering · model governance
 
-## Responsible-use boundary
+## Limitations
 
-This is a historical, portfolio forecasting case based on the M5 competition. It is not a live 2026 demand forecast. Residual bands are descriptive monitoring ranges, not calibrated prediction intervals. Feature importance describes model reliance, not causality.
+This is a historical forecasting study based on the M5 competition, not a live 2026 demand forecast. Residual bands are descriptive monitoring ranges, not calibrated prediction intervals. Feature importance describes model reliance, not causality.
 
 ## Author
 
-**Muhammad Ahmed Shoaib** — Business analytics, supply chain, forecasting and decision support.
+**Muhammad Ahmed Shoaib**<br>
+Business analytics, supply chain, forecasting and decision support.
