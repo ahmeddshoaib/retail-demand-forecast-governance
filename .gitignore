@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Source and processed data are deliberately excluded.
+data/raw/
+data/processed/
+
+# Dashboard data exports may reproduce source records.
+outputs/powerbi/
+*.pbix
+

@@ -1,0 +1,2 @@
+selected_model,lightgbm_lower_rmsse_than_both_baselines,lightgbm_series_wins_vs_seasonal_naive,lightgbm_series_wins_vs_holt_winters,required_series_wins,lightgbm_selected,rationale
+global_lightgbm_recursive,True,29,19,16,True,LightGBM passed the pre-specified complexity gate: lower overall RMSSE than both baselines and lower mean fold RMSSE than seasonal-naive on at least 16 series.

@@ -1,0 +1,5 @@
+fold_id,origin_day,n_predictions,maximum_absolute_difference,passed
+F1,1829,840,0.0,True
+F2,1857,840,0.0,True
+F3,1885,840,0.0,True
+F4,1913,840,0.0,True

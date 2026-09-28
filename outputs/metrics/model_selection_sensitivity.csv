@@ -1,0 +1,5 @@
+condition,observed,required,passed,role
+Overall RMSSE lower than both baselines,True,True,True,Original gate
+Series wins versus seasonal-naive,29,16,True,Original gate
+Series wins versus Holt-Winters,19,16,True,Stricter sensitivity check
+Folds won versus Holt-Winters,4,4,True,Stricter sensitivity check

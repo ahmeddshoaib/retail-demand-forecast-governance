@@ -1,0 +1,3 @@
+candidate_model,baseline_model,n_series,candidate_series_wins,mean_rmsse_difference,median_rmsse_difference,bootstrap_interval_low,bootstrap_interval_high,exact_sign_test_pvalue,interpretation
+global_lightgbm_recursive,seasonal_naive_7,30,29,-0.23374233432999997,-0.19908051527260295,-0.31411103972337107,-0.17307775748543264,5.774199962615967e-08,Negative RMSSE differences favour LightGBM
+global_lightgbm_recursive,holt_winters_add_damped_7,30,19,-0.07721503475321369,-0.021096046664141332,-0.1577675404713387,-0.017044528831557847,0.20048842206597328,Negative RMSSE differences favour LightGBM
