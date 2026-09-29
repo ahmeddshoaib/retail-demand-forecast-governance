@@ -28,7 +28,12 @@ def verify_structure() -> None:
         "MODEL_CARD.md",
         "src/lightgbm_model.py",
         "tests/test_forecast_governance.py",
-        "dashboard/mockups/page_3.png",
+        "dashboard/submitted-power-bi/page_1_executive_overview.png",
+        "dashboard/submitted-power-bi/page_2_demand_exceptions.png",
+        "dashboard/submitted-power-bi/page_3_forecast_performance.png",
+        "dashboard/submitted-power-bi/page_4_governance_provenance.png",
+        "dashboard/submitted-power-bi/page_5_operational_demonstrator.png",
+        "dashboard/submitted-power-bi/semantic_model.png",
     ]
     for relative in required:
         require((ROOT / relative).is_file(), f"Missing {relative}")
