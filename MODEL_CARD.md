@@ -24,7 +24,7 @@ Global recursive LightGBM achieved RMSSE `0.652780` and WAPE `0.084580`, beating
 ## Known limitations
 
 - Results are historical and specific to the M5 data-generating process.
-- Holt-Winters remained stronger on 11 series and over days 22–28.
+- Holt-Winters remained stronger on 11 series and over days 22-28.
 - Feature importance is descriptive and does not establish causal effects.
 - Monitoring ranges are empirical residual summaries, not calibrated intervals.
 - Operational value was not tested through a live deployment or user study.

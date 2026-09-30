@@ -18,7 +18,7 @@ The study transforms 58,230 daily observations into 30 category-store series, ev
 | Series wins vs Holt-Winters | **19 / 30** |
 | Leakage masking checks | **4 / 4 passed** |
 
-LightGBM produced the strongest aggregate result and won every evaluation fold. The decision was not treated as universal, however: Holt-Winters was better for 11 individual series and recorded a slightly lower RMSSE over forecast days 22–28. The recommended operating model is therefore LightGBM as the primary forecast, supported by series-level exceptions and horizon-level monitoring rather than blind automation.
+LightGBM produced the strongest aggregate result and won every evaluation fold. The decision was not treated as universal, however: Holt-Winters was better for 11 individual series and recorded a slightly lower RMSSE over forecast days 22-28. The recommended operating model is therefore LightGBM as the primary forecast, supported by series-level exceptions and horizon-level monitoring rather than blind automation.
 
 ## Why the project matters
 
@@ -91,7 +91,7 @@ The images below are the exact dashboard captures included in the submitted tech
 
 The opening page combines forward demand, category and store selection, forecast profile, model reliability and a management summary. Its purpose is to let a reviewer understand both the operational outlook and the strength of the historical evidence behind it.
 
-> The submitted screenshot preserves an earlier manager-action sentence. The verified horizon table is authoritative: Holt-Winters recorded a lower RMSSE than LightGBM on days 22–28 (`0.6119` vs `0.6269`), while LightGBM remained the best model overall.
+> The submitted screenshot preserves an earlier manager-action sentence. The verified horizon table is authoritative: Holt-Winters recorded a lower RMSSE than LightGBM on days 22-28 (`0.6119` vs `0.6269`), while LightGBM remained the best model overall.
 
 ### 2. Demand and exception monitor
 
@@ -150,7 +150,7 @@ This distinction matters. The dissertation supports forecast selection and revie
 
 ## Reproduce the analysis
 
-The raw and processed M5 records are not redistributed. Download the official M5 Forecasting — Accuracy files from Kaggle and place them under `data/raw/m5/` as described in [`data/README.md`](data/README.md).
+The raw and processed M5 records are not redistributed. Download the official M5 Forecasting - Accuracy files from Kaggle and place them under `data/raw/m5/` as described in [`data/README.md`](data/README.md).
 
 ```bash
 python -m venv .venv
