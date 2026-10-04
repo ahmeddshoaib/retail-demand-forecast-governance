@@ -13,7 +13,9 @@ The study transforms 58,230 daily observations into 30 category-store series, ev
 | Selected model | Global recursive LightGBM |
 | Overall RMSSE | **0.6528** |
 | Overall WAPE | **8.46%** |
-| Historical backtest forecasts | **10,080** |
+| Out-of-sample forecasts across 3 models | **10,080** |
+| Holt-Winters RMSSE | **0.7300** |
+| Seasonal-naive RMSSE | **0.8865** |
 | Series wins vs seasonal naive | **29 / 30** |
 | Series wins vs Holt-Winters | **19 / 30** |
 | Leakage masking checks | **4 / 4 passed** |
