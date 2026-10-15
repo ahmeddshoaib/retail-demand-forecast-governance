@@ -1,6 +1,6 @@
 # Explainable Category-Store Demand Forecasting and Forecast Governance
 
-My MSc Business Analytics dissertation at Queen's University Belfast investigates a practical retail planning problem: producing defensible 28-day demand forecasts at category-store level and giving decision-makers enough evidence to use those forecasts responsibly.
+My MSc Business Analytics dissertation at Queen's University Belfast used the M5 Forecasting - Accuracy dataset, a public competition dataset based on Walmart item sales. I aggregated the daily item data into 30 category-store series and investigated how to produce and evaluate 28-day forecasts that a retail planning team could review before using.
 
 The study transforms 58,230 daily observations into 30 category-store series, evaluates three forecasting approaches through four ordered backtests, tests the winning pipeline for leakage and robustness, and carries the result into a five-page Power BI decision product. The outcome is not simply a model score. It is a traceable forecasting and governance framework that connects historical demand, model selection, exception review and management action.
 
