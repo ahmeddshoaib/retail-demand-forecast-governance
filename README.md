@@ -154,6 +154,8 @@ This distinction matters. The dissertation supports forecast selection and revie
 
 The raw and processed M5 records are not redistributed. Download the official M5 Forecasting - Accuracy files from Kaggle and place them under `data/raw/m5/` as described in [`data/README.md`](data/README.md).
 
+Use Python 3.11 or later. The code uses standard-library features introduced in Python 3.10 and the pinned scientific package versions target a current Python runtime.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
